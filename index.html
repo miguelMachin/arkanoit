@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	#scene {
+		width: 100%;
+		margin: 0 auto;
+	}
+	#gameover{
+		z-index: 10;
+		width: 30%;
+		height: 50%;
+		margin:10% auto;
+		font-size:50%;
+		background-color:black;
+		color: white;
+		border: 2px solid white;
+		padding-bottom:10px;
+		padding-top:10px;
+		/*text-shadow: 3px 3px 5px #f00,
+						6px 6px 5px #FAFAFA;*/
+		text-shadow: 0 0 20px #FE2E2E;
+		font-family:"Maiandra GD";	
+		font-size: 35px;
+		margin-top:15px;
+		text-align: center;
+	}
+	#gameover p{
+		cursor:pointer;
+	}
+	.row{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.b0, .b1 , .b2, .b3{
+		width: 250px;
+		height: 50px;
+		display:inline-block;
+		border:solid 1px black;
+		margin: 5px;
+	}
+	.b0{
+		background-color: white;
+		visibility: hidden;
+	}
+	.b1{
+		background-color: red;
+		}
+	.b2{
+		background-color: blue;
+		}
+	.b3{
+		background-color: green;
+		}
+	#player{
+		position: absolute;
+		bottom:0px;
+		background-color:grey;
+		width: 200px; 
+		height: 50px;
+		margin:0 auto;
+	}
+	#ball{
+		position: absolute;
+		background-color: black;
+		width: 20px;
+		height: 20px;
+		display:block;
+		border-radius: 150px;	
+	}
+	</style>
+	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="scene">
+</div>
+
+
+<div id="ball"></div>
+<div id="player"></div>
+<script src="game.js"></script>
+
+</body>
+</html>
